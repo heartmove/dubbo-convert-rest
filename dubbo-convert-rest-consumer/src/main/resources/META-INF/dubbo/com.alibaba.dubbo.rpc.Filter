@@ -1,0 +1,1 @@
+httpInvokerFilter=com.heartmove.filter.HttpInvokerFilter
