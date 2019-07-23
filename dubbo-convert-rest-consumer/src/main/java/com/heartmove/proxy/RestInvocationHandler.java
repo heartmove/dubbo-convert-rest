@@ -12,7 +12,7 @@ public class RestInvocationHandler implements InvocationHandler {
     private final Invoker<?> invoker;
 
     public RestInvocationHandler(Invoker<?> handler) {
-        this.invoker = new RestInvoker<>(handler.getClass(), handler.getUrl());
+        this.invoker = new RestInvoker<>(handler.getInterface(), handler.getUrl());
     }
 
     @Override
